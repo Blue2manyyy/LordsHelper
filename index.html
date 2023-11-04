@@ -29,14 +29,21 @@
   }
 
   .button {
-    /* Styles existants des boutons... */
-    border: 3px solid transparent; /* Préparez les boutons pour une bordure colorée */
-    transition: background-color 0.3s, border-color 0.3s; /* Ajoutez border-color à la transition */
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid transparent; /* Bordure transparente pour éviter le changement de taille au survol */
+    transition: background-color 0.3s, border-color 0.3s; /* Transition pour le fond et la bordure */
   }
 
   .button-blue {
     background-color: #0000FF;
-    border-color: #0000FF; /* Initialisation de la bordure de la même couleur que le fond */
+    border-color: #0000FF; /* Bordure de la même couleur que le bouton */
   }
 
   .button-green {
@@ -49,9 +56,19 @@
     border-color: #FF0000;
   }
 
-  .button:hover {
-    background-color: transparent; /* Rend le fond transparent au survol */
-    color: #FFF; /* Changez la couleur du texte si nécessaire pour assurer la lisibilité */
+  .button-blue:hover {
+    background-color: rgba(0, 0, 255, 0.7); /* Bleu plus clair */
+    border-color: #0000FF; /* Bordure de la couleur d'origine */
+  }
+
+  .button-green:hover {
+    background-color: rgba(0, 128, 0, 0.7); /* Vert plus clair */
+    border-color: #008000; /* Bordure de la couleur d'origine */
+  }
+
+  .button-red:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Rouge plus clair */
+    border-color: #FF0000; /* Bordure de la couleur d'origine */
   }
 </style>
 </head>
@@ -60,7 +77,7 @@
 <div style="width: 100%; max-width: 600px;">
   <h1>F$N Docs</h1>
 
-  <a href="guerre-des-merveilles.html" class="button button-blue">Guerre des Merveilles</a>
+  <a href="guerre-des-merveilles.html" class="button button-blue">WoWs</a>
   <a href="tous-joueurs.html" class="button button-green">Tous joueurs</a>
   <a href="english-docs.html" class="button button-red">English docs</a>
 </div>
