@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des PDFs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin: 10px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FSN docs</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #4169E1;
+  }
+</style>
 </head>
 <body>
-    <h1>Liste des fichiers PDF</h1>
-    <ul>
-        <li><a href="pdfs/cc424.pdf" target="_blank">424 & variants</a></li>
-        <li><a href="pdfs/cc442.pdf" target="_blank">442</a></li>
-        <li><a href="pdfs/COUNTER_442.pdf" target="_blank">Counter du 442</a></li>
-        <li><a href="pdfs/cc055.pdf" target="_blank">055</a></li>
-        <li><a href="pdfs/cc208.pdf" target="_blank">208</a></li>
-        <li><a href="pdfs/bataillons.pdf" target="_blank">Gérer ses bataillons</a></li>
-        <li><a href="pdfs/howtospend.pdf" target="_blank">Comment bien dépenser</a></li>
-        <li><a href="pdfs/formations.pdf" target="_blank">Formations</a></li>
-        <li><a href="pdfs/front_testing.pdf" target="_blank">Tester la frontline</a></li>
-    </ul>
+
+<div class="header">
+  <h1>Docs [F$N]</h1>
+</div>
+
+<a href="pdfs/cc424.pdf" class="button" target="_blank">Le 424</a>
+<a href="pdfs/cc442.pdf" class="button" target="_blank">Le 442</a>
+<a href="pdfs/COUNTER_442.pdf" class="button" target="_blank">Counter 442</a>
+<a href="pdfs/cc055.pdf" class="button" target="_blank">Le 055</a>
+<a href="pdfs/cc208.pdf" class="button" target="_blank">Le 208</a>
+<a href="pdfs/bataillons.pdf" class="button" target="_blank">Gérer ses Bataillons</a>
+<a href="pdfs/howtospend.pdf" class="button" target="_blank">Comment dépenser</a>
+<a href="pdfs/formations.pdf" class="button" target="_blank">Formations</a>
+<a href="pdfs/front_testing.pdf" class="button" target="_blank">Tester la frontline</a>
+<a href="pdfs/howtospenden.pdf" class="button" target="_blank">How to spend (EN)</a>
+
 </body>
 </html>
