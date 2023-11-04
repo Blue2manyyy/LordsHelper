@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSN docs</title>
+<title>Votre Site Web</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -32,6 +32,20 @@
   .button:hover {
     background-color: #4169E1;
   }
+  
+  .button-special {
+    background-color: #FF0000; /* Couleur rouge pour le bouton spécial */
+  }
+  
+  .button-special:hover {
+    background-color: #CD5C5C; /* Une nuance plus claire de rouge au survol */
+  }
+  
+  #additionalPdfList {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
 </style>
 </head>
 <body>
@@ -49,7 +63,26 @@
 <a href="pdfs/howtospend.pdf" class="button" target="_blank">Comment dépenser</a>
 <a href="pdfs/formations.pdf" class="button" target="_blank">Formations</a>
 <a href="pdfs/front_testing.pdf" class="button" target="_blank">Tester la frontline</a>
-<a href="pdfs/howtospenden.pdf" class="button" target="_blank">How to spend (EN)</a>
+
+<!-- Bouton spécial pour afficher une nouvelle liste de PDF -->
+<button class="button button-special" onclick="togglePdfList()">Plus de PDFs</button>
+
+<!-- Liste supplémentaire de PDF, initialement masquée -->
+<div id="additionalPdfList">
+  <a href="pdfs/howtospenden.pdf" class="button" target="_blank">How to spend</a>
+  <!-- Ajoutez d'autres liens PDF ici si nécessaire -->
+</div>
+
+<script>
+function togglePdfList() {
+  var list = document.getElementById("additionalPdfList");
+  if (list.style.display === "none") {
+    list.style.display = "block";
+  } else {
+    list.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
